@@ -14,9 +14,9 @@ arr2 = np.random.randint(1, 50, 16).reshape(4, 4)
 print('Array 4x4: ', arr2)
 
 #3)MOSTRE O RESULTADO DA MÉDIA DE CADA LINHA E CADA COLUNA DA MATRIZ GERADA PELA QUESTAO 2, APRESENTE O  MAIOR VALOR DAS MEDIAS PARA LINHAS E TAMBEM PARA COLUNAS.
-
 print('Media das colunas: ', arr2.mean(axis=0))
 print('Media das linhas: ', arr2.mean(axis=1))
+
 #4)MOSTRE  A QUANTIDADE  DE APARIÇÕES DE CADA UM DOS NÚMEROS NA MESMA.
 print('Numero / quantidade que aparece:', np.unique(arr2, return_counts=True))
 unique = np.unique(arr2, return_counts=True)[0] #PEGA O PRIMEIRO ARRAY
