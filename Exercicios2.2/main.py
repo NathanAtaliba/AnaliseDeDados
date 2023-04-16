@@ -1,5 +1,6 @@
 #Exercicios
 import numpy as np
+
 #1)CRIE UM ARRAY DE FLOATS  COM 10 ELEMENTOS POSITIVO E NEGATIVO, ENTRE 0 E 1
 np.random.seed(5)
 arr = np.random.uniform(-1, 1, 10) #GERA 10 VALORES DE 0 A 1 POSITIVO E NEGATIVOS
