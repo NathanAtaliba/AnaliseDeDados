@@ -24,3 +24,6 @@ dataset = np.loadtxt('space.csv',
 #VISUALIZANDO APENAS AS COLUNAS DO DATASET
 dataset[0,:] #ANALISANDO AS COLUNAS
 
+#EXTRAINDO APENAS AS EMPRESAS QUE JA FIZERAM
+print(dataset[1:, 1])
+
