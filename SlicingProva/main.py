@@ -21,3 +21,6 @@ dataset = np.loadtxt('space.csv',
                      dtype=str,
                      encoding='utf-8')
 
+#VISUALIZANDO APENAS AS COLUNAS DO DATASET
+dataset[0,:] #ANALISANDO AS COLUNAS
+
