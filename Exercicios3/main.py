@@ -35,10 +35,11 @@ print(missao)
 print('Missao caro: ', valorCaro[23]) #ANALISADO NO VETOR
 
 #MOSTRE O NOME DAS EMPRESAS QUE JA REALIZARAM MISSÕES ESPACIAIS JUNTAMENTE COM SUAS RESPECTIVAS QUANTIDADES DE MISSÕES (USE O FOR NO FINAL PARA MOSTRAR AS INFORMAÇÕES).
-listaEmpresas = ds[ds[:, 7] == 'Success']
+listaEmpresas = ds[1:, 1]
+nomes, contagemMissoes = np.unique(listaEmpresas, return_counts=True)
 #print(listaEmpresas)
-for i in listaEmpresas:
-    print('nomes: ', listaEmpresas[i, 3])
+for nome in nomes:
+    print('nome: ', nome, ' Quantidade de Missoes: ', contagemMissoes[nome == nomes][0])
 
 
 
