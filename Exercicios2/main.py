@@ -1,6 +1,5 @@
 import numpy as np
 
-
 #EXERCICIOS
 #1) CRIAR UM VETOR DE 0 A 1 DE TAMANHO 21
 arr = np.linspace(0, 1, 21)

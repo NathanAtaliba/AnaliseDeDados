@@ -19,6 +19,7 @@ print('Porcentagem de missoes em sucesso:', (3879/totalDeMissoes)*100, '%')
 contagemDeCusto = ds[1:, 6]
 print(np.unique(contagemDeCusto, return_counts=True))
 semZero = contagemDeCusto[contagemDeCusto.astype(float) > 0] #PEGANDO OS VALORES COM VALOR MAIOR QUE 0
+print(semZero)
 media = np.mean(semZero.astype(float)) #TIRANDO A MEDIA DOS VALORES ACIMA DE ZERO
 print('Media dos custos: ', media) #MOSTRANDO A MEDIA
 
